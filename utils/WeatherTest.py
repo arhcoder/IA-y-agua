@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 # Import Meteostat library and dependencies
 from datetime import datetime
 import matplotlib.pyplot as plt
