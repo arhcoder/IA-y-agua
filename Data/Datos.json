@@ -1,0 +1,594 @@
+{
+"Jalisco": {
+ "Acatic":{
+    "Precipitacion mm": "724.8",
+    "Temperatura °C": "20.6",
+    "Aptitud":"Alto"
+ },
+    "Acatlan de Juarez":{
+        "Precipitacion mm": "699.9",
+        "Temperatura °C": "22.0",
+        "Aptitud":"Alto"
+    },
+    "Ahualulco de Mercado":{
+        "Precipitacion mm": "754.6",
+        "Temperatura °C": "23.0",
+        "Aptitud":"Alto"
+    },
+    "Amacueca":{
+        "Precipitacion mm": "573.5",
+        "Temperatura °C": "22.0",
+        "Aptitud":"Medio"
+    },
+    "Amatitan":{
+        "Precipitacion mm": "760.6",
+        "Temperatura °C": "24.6",
+        "Aptitud":"Alto"
+    },
+    "Ameca":{
+        "Precipitacion mm": "732.4",
+        "Temperatura °C": "23.0",
+        "Aptitud":"Alto"
+    },
+    "Arandas":{
+        "Precipitacion mm": "645.1",
+        "Temperatura °C": "19.9",
+        "Aptitud":"Medio"
+    },
+    "Atemajac de Brizuela":{
+        "Precipitacion mm": "597.1",
+        "Temperatura °C": "22.0",
+        "Aptitud":"Medio"
+    },
+    "Atengo":{
+        "Precipitacion mm": "739.7",
+        "Temperatura °C": "22.1",
+        "Aptitud":"Alto"
+    },
+    "Atenguillo":{
+        "Precipitacion mm": "855.8",
+        "Temperatura °C": "20.7",
+        "Aptitud":"Alto"
+    },
+    "Atotonilco el Alto":{
+        "Precipitacion mm": "698.1",
+        "Temperatura °C": "21.0",
+        "Aptitud":"Medio"
+    },
+    "Atoyac":{
+        "Precipitacion mm": "573.0",
+        "Temperatura °C": "21.8",
+        "Aptitud":"Medio"
+    },
+    "Autlan de Navarro":{
+        "Precipitacion mm": "752.5",
+        "Temperatura °C": "24.4",
+        "Aptitud":"Alto"
+    },
+    "Ayotlan":{
+        "Precipitacion mm": "672.4",
+        "Temperatura °C": "21.1",
+        "Aptitud":"Medio"
+    },
+    "Ayutla":{
+        "Precipitacion mm": "717.7",
+        "Temperatura °C": "22.8",
+        "Aptitud":"Alto"
+    },
+    "Bolaños":{
+        "Precipitacion mm": "611.9",
+        "Temperatura °C": "22.8",
+        "Aptitud":"Medio"
+    },
+    "Cañadas de Obregon":{
+        "Precipitacion mm": "642.3",
+        "Temperatura °C": "21.0",
+        "Aptitud":"Medio"
+    },
+    "Casimiro Castillo":{
+        "Precipitacion mm": "852.8",
+        "Temperatura °C": "25.0",
+        "Aptitud":"Alto"
+    },
+    "Chapala":{
+        "Precipitacion mm": "737.1",
+        "Temperatura °C": "21.3",
+        "Aptitud":"Alto"
+    },
+    "Chimaltitlan":{
+        "Precipitacion mm": "704.2",
+        "Temperatura °C": "20.1",
+        "Aptitud":"Alto"
+    },
+    "Chiquilistlan":{
+        "Precipitacion mm": "617.8",
+        "Temperatura °C": "22.2",
+        "Aptitud":"Medio"
+    },
+    "Cocula":{
+        "Precipitacion mm": "730.7",
+        "Temperatura °C": "22.8",
+        "Aptitud":"Alto"
+    },
+    "Colotlan":{
+        "Precipitacion mm": "565.1",
+        "Temperatura °C": "20.5",
+        "Aptitud":"Medio"
+    },
+    "Concepcion de Buenos Aires":{
+        "Precipitacion mm": "728.5",
+        "Temperatura °C": "18.7",
+        "Aptitud":"Alto"
+    },
+    "Cuautitlan de Garcia Barragan":{
+        "Precipitacion mm": "886.0",
+        "Temperatura °C": "25.0",
+        "Aptitud":"Alto"
+    },
+    "Cuautla":{
+        "Precipitacion mm": "812.5",
+        "Temperatura °C": "21.1",
+        "Aptitud":"Alto"
+    },
+    "Cuquio":{
+        "Precipitacion mm": "691.7",
+        "Temperatura °C": "20.8",
+        "Aptitud":"Alto"
+    },
+    "Degollado":{
+        "Precipitacion mm": "639.3",
+        "Temperatura °C": "20.8",
+        "Aptitud":"Medio"
+    },
+    "Ejutla":{
+        "Precipitacion mm": "624.6",
+        "Temperatura °C": "24.5",
+        "Aptitud":"Medio"
+    },
+    "El Arenal":{
+        "Precipitacion mm": "757.9",
+        "Temperatura °C": "23.3",
+        "Aptitud":"Alto"
+    },
+    "El Grullo":{
+        "Precipitacion mm": "703.7",
+        "Temperatura °C": "24.0",
+        "Aptitud":"Alto"
+    },
+    "El Limon":{
+        "Precipitacion mm": "649.0",
+        "Temperatura °C": "24.7",
+        "Aptitud":"Medio"
+    },
+    "El Salto":{
+        "Precipitacion mm": "779.6",
+        "Temperatura °C": "21.2",
+        "Aptitud":"Alto"
+    },
+    "Encarnacion de Diaz":{
+        "Precipitacion mm": "487.0",
+        "Temperatura °C": "20.0",
+        "Aptitud":"Medio"
+    },
+    "Etzatlan":{
+        "Precipitacion mm": "774.8",
+        "Temperatura °C": "23.0",
+        "Aptitud":"Alto"
+    },
+    "Gomez Farías":{
+        "Precipitacion mm": "696.8",
+        "Temperatura °C": "22.1",
+        "Aptitud":"Medio"
+    },
+    "Guachinango":{
+        "Precipitacion mm": "879.5",
+        "Temperatura °C": "21.7",
+        "Aptitud":"Alto"
+    },
+    "Hostotipaquillo":{
+        "Precipitacion mm": "758.7",
+        "Temperatura °C": "23.1",
+        "Aptitud":"Alto"
+    },
+    "Huejucar":{
+        "Precipitacion mm": "496.5",
+        "Temperatura °C": "20.2",
+        "Aptitud":"Medio"
+    },
+    "Huejuquilla el Alto":{
+        "Precipitacion mm": "515.4",
+        "Temperatura °C": "20.9",
+        "Aptitud":"Medio"
+    },
+    "Ixtlahuacan de los Membrillos":{
+        "Precipitacion mm": "760.6",
+        "Temperatura °C": "20.8",
+        "Aptitud":"Alto"
+    },
+    "Ixtlahuacan del Rio":{
+        "Precipitacion mm": "753.9",
+        "Temperatura °C": "21.7",
+        "Aptitud":"Alto"
+    },
+    "Jalostotitlan":{
+        "Precipitacion mm": "587.9",
+        "Temperatura °C": "20.3",
+        "Aptitud":" Medio"
+    },
+    "Jamay":{
+        "Precipitacion mm": "677.5",
+        "Temperatura °C": "21.0",
+        "Aptitud":"Medio"
+    },
+    "Jesus Maria":{
+        "Precipitacion mm": "635.7",
+        "Temperatura °C": "20.1",
+        "Aptitud":"Medio"
+    },
+    "Jilotlan de los Dolores":{
+        "Precipitacion mm": "660.1",
+        "Temperatura °C": "24.3",
+        "Aptitud":"Medio"
+    },
+    "Jocotepec":{
+        "Precipitacion mm": "672.7",
+        "Temperatura °C": "21.7",
+        "Aptitud":"Medio"
+    },
+    "Juanacatlan":{
+        "Precipitacion mm": "753.4",
+        "Temperatura °C": "21.2",
+        "Aptitud":"Alto"
+    },
+    "Juchitlan":{
+        "Precipitacion mm": "583.7",
+        "Temperatura °C": "23.0",
+        "Aptitud":"Medio"
+    },
+    "La Barca":{
+        "Precipitacion mm": "682.5",
+        "Temperatura °C": "21.0",
+        "Aptitud":"Medio"
+    },
+    "La manzanilla de la Paz":{
+        "Precipitacion mm": "717.8",
+        "Temperatura °C": "20.7",
+        "Aptitud":"Alto"
+    },
+    "Lagos de Moreno":{
+        "Precipitacion mm": "492.9",
+        "Temperatura °C": "19.9",
+        "Aptitud":"Medio"
+    },
+    "Magdalena":{
+        "Precipitacion mm": "776.4",
+        "Temperatura °C": "23.1",
+        "Aptitud":"Alto"
+    },
+    "Mascota":{
+        "Precipitacion mm": "922.0",
+        "Temperatura °C": "21.9",
+        "Aptitud":"Alto"
+    },
+    "Mazamitla":{
+        "Precipitacion mm": "734.5",
+        "Temperatura °C": "21.3",
+        "Aptitud":"Alto"
+    },
+    "Mexticacan":{
+        "Precipitacion mm": "614.6",
+        "Temperatura °C": "20.3",
+        "Aptitud":"Medio"
+    },
+    "Mezquitic":{
+        "Precipitacion mm": "557.2",
+        "Temperatura °C": "22.3",
+        "Aptitud":"Alto"
+    },
+    "Mixtlan":{
+        "Precipitacion mm": "924.5",
+        "Temperatura °C": "19.6",
+        "Aptitud":"Alto"
+    },
+    "Ocotlan":{
+        "Precipitacion mm": "713.1",
+        "Temperatura °C": "21.1",
+        "Aptitud":"Alto"
+    },
+    "Pihuamo":{
+        "Precipitacion mm": "870.0",
+        "Temperatura °C": "25.0",
+        "Aptitud":"Alto"
+    },
+    "Poncitlan":{
+        "Precipitacion mm": "717.2",
+        "Temperatura °C": "21.0",
+        "Aptitud":"Alto"
+    },
+    "Quituapan":{
+        "Precipitacion mm": "648.6",
+        "Temperatura °C": "21.4",
+        "Aptitud":"Medio"
+    },
+    "San Cristobal de la Barranca":{
+        "Precipitacion mm": "745.3",
+        "Temperatura °C": "24.3",
+        "Aptitud":"Alto"
+    },
+    "San Diego de Alejandria":{
+        "Precipitacion mm": "529.6",
+        "Temperatura °C": "20.0",
+        "Aptitud":"Medio"
+    },
+    "San Gabriel":{
+        "Precipitacion mm": "632.7",
+        "Temperatura °C": "24.3",
+        "Aptitud":"Medio"
+    },
+    "San Ignacio Cerro Gordo":{
+        "Precipitacion mm": "668.2",
+        "Temperatura °C": "20.4",
+        "Aptitud":"Medio"
+    },
+    "San Juan de los Lagos":{
+        "Precipitacion mm": "526.1",
+        "Temperatura °C": "20.0",
+        "Aptitud":"Medio"
+    },
+    "San Juanito de Escobedo":{
+        "Precipitacion mm": "769.6",
+        "Temperatura °C": "23.0",
+        "Aptitud":"Alto"
+    },
+    "San Marcos":{
+        "Precipitacion mm": "794.0",
+        "Temperatura °C": "23.0",
+        "Aptitud":"Alto"
+    },
+    "San Martin de Bolaños":{
+        "Precipitacion mm": "638.0",
+        "Temperatura °C": "22.7",
+        "Aptitud":"Medio"
+    },
+    "San Martin Hidalgo":{
+        "Precipitacion mm": "742.0",
+        "Temperatura °C": "23.0",
+        "Aptitud":"Alto"
+    },
+    "San Miguel el Alto":{
+        "Precipitacion mm": "597.6",
+        "Temperatura °C": "19.9",
+        "Aptitud":"Medio"
+    },
+    "San Pedro Tlaquepaque":{
+        "Precipitacion mm": "794.8",
+        "Temperatura °C": "22.0",
+        "Aptitud":"Alto"
+    },
+    "San Sebastian del Oeste":{
+        "Precipitacion mm": "973.0",
+        "Temperatura °C": "24.1",
+        "Aptitud":"Alto"
+    },
+    "Santa Maria de los Angeles":{
+        "Precipitacion mm": "536.0",
+        "Temperatura °C": "20.0",
+        "Aptitud":"Alto"
+    },
+    "Santa Maria del Oro":{
+        "Precipitacion mm": "677.4",
+        "Temperatura °C": "23.1",
+        "Aptitud":"Medio"
+    },
+    "Sayula":{
+        "Precipitacion mm": "625.3",
+        "Temperatura °C": "22.0",
+        "Aptitud":"Medio"
+    },
+    "Tala":{
+        "Precipitacion mm": "746.2",
+        "Temperatura °C": "22.6",
+        "Aptitud":"Alto"
+    },
+    "Talpa de Allende":{
+        "Precipitacion mm": "1000.2",
+        "Temperatura °C": "22.9",
+        "Aptitud":"Alto"
+    },
+    "Tamazula de Gordiano":{
+        "Precipitacion mm": "834.3",
+        "Temperatura °C": "23.0",
+        "Aptitud":"Alto"
+    },
+    "Tapalpa":{
+        "Precipitacion mm": "592.1",
+        "Temperatura °C": "20.6",
+        "Aptitud":"Medio"
+    },
+    "Tecalitlan":{
+        "Precipitacion mm": "764.2",
+        "Temperatura °C": "24.2",
+        "Aptitud":"Alto"
+    },
+    "Techaluta de Montenegro":{
+        "Precipitacion mm": "548.9",
+        "Temperatura °C": "22.0",
+        "Aptitud":"Medio"
+    },
+    "Tecolotlan":{
+        "Precipitacion mm": "641.3",
+        "Temperatura °C": "22.6",
+        "Aptitud":"Medio"
+    },
+    "Tenamaxtlan":{
+        "Precipitacion mm": "655.1",
+        "Temperatura °C": "23.0",
+        "Aptitud":"Medio"
+    },
+    "Teocaltiche":{
+        "Precipitacion mm": "506.0",
+        "Temperatura °C": "20.2",
+        "Aptitud":"Medio"
+    },
+    "Teocuitatlan de Corona":{
+        "Precipitacion mm": "654.5",
+        "Temperatura °C": "21.2",
+        "Aptitud":"Medio"
+    },
+    "Tepatitlan de Morelos":{
+        "Precipitacion mm": "700.3",
+        "Temperatura °C": "20.8",
+        "Aptitud":"Alto"
+    },
+    "Tequila":{
+        "Precipitacion mm": "748.0",
+        "Temperatura °C": "23.9",
+        "Aptitud":"Alto"
+    },
+    "Teuchitlan":{
+        "Precipitacion mm": "762.4",
+        "Temperatura °C": "23.2",
+        "Aptitud":"Alto"
+    },
+    "Tizapan el Alto":{
+        "Precipitacion mm": "695.7",
+        "Temperatura °C": "21.0",
+        "Aptitud":"Medio"
+    },
+    "Tlajomulco de Zuniga":{
+        "Precipitacion mm": "747.5",
+        "Temperatura °C": "21.6",
+        "Aptitud":"Alto"
+    },
+    "Toliman":{
+        "Precipitacion mm": "626.9",
+        "Temperatura °C": "25.0",
+        "Aptitud":"Medio"
+    },
+    "Tomatlan":{
+        "Precipitacion mm": "904.8",
+        "Temperatura °C": "24.7",
+        "Aptitud":"Alto"
+    },
+    "Tonala":{
+        "Precipitacion mm": "797.0",
+        "Temperatura °C": "21.8",
+        "Aptitud":"Alto"
+    },
+    "Tonaya":{
+        "Precipitacion mm": "603.0",
+        "Temperatura °C": "24.1",
+        "Aptitud":"Medio"
+    },
+    "Tonila":{
+        "Precipitacion mm": "934.3",
+        "Temperatura °C": "25.0",
+        "Aptitud":"Alto"
+    },
+    "Totatiche":{
+        "Precipitacion mm": "636.6",
+        "Temperatura °C": "20.5",
+        "Aptitud":"Medio"
+    },
+    "Tototlan":{
+        "Precipitacion mm": "728.7",
+        "Temperatura °C": "21.0",
+        "Aptitud":"Alto"
+    },
+    "Tuxcacuesco":{
+        "Precipitacion mm": "581.8",
+        "Temperatura °C": "24.9",
+        "Aptitud":"Medio"
+    },
+    "Tuxcueca":{
+        "Precipitacion mm": "648.2",
+        "Temperatura °C": "21.0",
+        "Aptitud":"Medio"
+    },
+    "Tuxpan":{
+        "Precipitacion mm": "775.1",
+        "Temperatura °C": "24.2",
+        "Aptitud":"Medio"
+    },
+    "Uniones de San Antonio":{
+        "Precipitacion mm": "518.8",
+        "Temperatura °C": "20.1",
+        "Aptitud":"Medio"
+    },
+    "Uniones de Tula":{
+        "Precipitacion mm": "670.2",
+        "Temperatura °C": "23.0",
+        "Aptitud":"Medio"
+    },
+    "Valle de Guadalupe":{
+        "Precipitacion mm": "638.0",
+        "Temperatura °C": "21.0",
+        "Aptitud":"Medio"
+    },
+    "Valle de Juarez":{
+        "Precipitacion mm": "703.8",
+        "Temperatura °C": "21.4",
+        "Aptitud":"Medio"
+    },
+    "Villa Corona":{
+        "Precipitacion mm": "688.3",
+        "Temperatura °C": "22.1",
+        "Aptitud":"Medio"
+    },
+    "Villa Guerrero":{
+        "Precipitacion mm": "618.8",
+        "Temperatura °C": "20.6",
+        "Aptitud":"Medio"
+    },
+    "Villa Hidalgo":{
+        "Precipitacion mm": "491.8",
+        "Temperatura °C": "19.8",
+        "Aptitud":"Medio"
+    },
+    "Villa Purificacion":{
+        "Precipitacion mm": "897.6",
+        "Temperatura °C": "24.9",
+        "Aptitud":"Alto"
+    },
+    "Yahualica de Gonzalez Gallo":{
+        "Precipitacion mm": "649.0",
+        "Temperatura °C": "20.5",
+        "Aptitud":"Medio"
+    },
+    "Zacoalco de Torres":{
+        "Precipitacion mm": "564.5",
+        "Temperatura °C": "22.0",
+        "Aptitud":"Medio"
+    },
+    "Zapopan":{
+        "Precipitacion mm": "791.3",
+        "Temperatura °C": "22.5",
+        "Aptitud":"Alto"
+    },
+    "Zapotiltic":{
+        "Precipitacion mm": "776.7",
+        "Temperatura °C": "23.8",
+        "Aptitud":"Alto"
+    },
+    "Zapotitlan de Vadillo":{
+        "Precipitacion mm": "686.9",
+        "Temperatura °C": "25.0",
+        "Aptitud":"Medio"
+    },
+    "Zapotlan del Rey":{
+        "Precipitacion mm": "731.3",
+        "Temperatura °C": "21.0",
+        "Aptitud":"Alto"
+    },
+    "Zapotlan del Grande":{
+        "Precipitacion mm": "728.5",
+        "Temperatura °C": "23.6",
+        "Aptitud":"Alto"
+    },
+    "Zapotlanejo":{
+        "Precipitacion mm": "751.8",
+        "Temperatura °C": "20.9",
+        "Aptitud":"Alto"
+    }
+}
+}
