@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 
 def obtener_parametros_et0(latitud: float, longitud: float):
 
