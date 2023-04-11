@@ -1,8 +1,8 @@
 import math
 
 def calcular_et0(t_med, t_min, t_max, viento, humedad, elevacion, latitud, dia_yeard):
-    
-    """Función que calcula la evapotranspiración de referencia (ET0) utilizando la ecuación de Penman-Monteith.
+    """
+    Función que calcula la evapotranspiración de referencia (ET0) utilizando la ecuación de Penman-Monteith.
 
     Parámetros:
     - t_med (float): temperatura media diaria (°C)
@@ -46,8 +46,8 @@ def calcular_et0(t_med, t_min, t_max, viento, humedad, elevacion, latitud, dia_y
     ea = es_min * humedad / 100
     delta_ea = 4098 * ea / t_med_kelvin ** 2
     deficit_presion_vapor = es - ea
-
-        # Cálculo de la radiación neta diaria
+    
+    # Cálculo de la radiación neta diaria
     albedo = 0.23
     Rs = 0.75 * Ra
     Rns = (1 - albedo) * Rs
