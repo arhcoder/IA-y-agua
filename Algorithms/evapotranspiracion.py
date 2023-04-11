@@ -1,8 +1,8 @@
 import math
 
 def calcular_et0(t_med, t_min, t_max, viento, humedad, elevacion, latitud, dia_yeard):
-    """
-    Función que calcula la evapotranspiración de referencia (ET0) utilizando la ecuación de Penman-Monteith.
+    
+    """Función que calcula la evapotranspiración de referencia (ET0) utilizando la ecuación de Penman-Monteith.
 
     Parámetros:
     - t_med (float): temperatura media diaria (°C)
