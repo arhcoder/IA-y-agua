@@ -1,4 +1,4 @@
-from et0_evapotranspiracion import calculate_eto
+from et0_evapotranspiracion import obtener_et0
 from et0_parametros import obtener_parametros_et0
 import csv
 
@@ -23,7 +23,7 @@ def calcular_necesidad_hidrica(mts_campo: float, semilla: str, estatus_cultivo: 
     clima = obtener_parametros_et0(latitud, longitud)
 
     # Calcula el valor de la evapotranspiración (et0):
-    et0 = calculate_eto(lat=latitud, t_min=clima["temp_min"], t_max=clima["temp_max"], wind_speed=clima["viento_vel"], humidity=clima["humedad"], elev=clima["elevacion"], doy=clima["dia_anio"], solar_rad=25)
+    et0 = obtener_et0(t_min=clima["temp_min"], t_max=clima["temp_max"], wind_speed=clima["viento_vel"], humidity=clima["humedad"], elev=clima["elevacion"], solar_rad=25)
 
     # Encuentra el coeficiente del valor a la condición del cultivo basado en el tipo de semilla:
     with open('../Data/kc-coeficientes-de-cultivo-referencial.csv', newline='') as archivo:

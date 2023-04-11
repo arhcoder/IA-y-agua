@@ -18,14 +18,14 @@ def obtener_et0(t_max, t_min, wind_speed, humidity, solar_rad, elev):
   
     # Calcular la presion atmos del mar
     P = (101.3 * ((293 - 0.0065 * elev) / 293) ** 5.26)
-    print(P)
+    # print(P)
 
 
-    delta = (4098 * (0.6108 * exp((17.27 * t_max) / (t_max + 237.3)) - 0.6108 * exp((17.27 * t_min) / (t_min + 237.3)))) / ((t_max - t_min) + 237.3) ** 2
+    delta = (4098 * (0.6108 * math.exp((17.27 * t_max) / (t_max + 237.3)) - 0.6108 * math.exp((17.27 * t_min) / (t_min + 237.3)))) / ((t_max - t_min) + 237.3) ** 2
     gamma = 0.665e-3 * P  # aquí se asume que la presión atmosférica es 101.3 kPa
     psy = 0.00163 * (P/ (0.622 * 2.45))# aquí se asume que la presión atmosférica es 101.3 kPa
 
-    ETo = 0.408 * delta * (solar_rad / 25.0) + gamma * ((900 / (t_max + 273)) * wind_speed * (delta + psy * (1 + 0.34 * wind_speed)))+ gamma * 0.34 * (1 - (humidity / 100)) * sqrt(elev) * delta
+    ETo = 0.408 * delta * (solar_rad / 25.0) + gamma * ((900 / (t_max + 273)) * wind_speed * (delta + psy * (1 + 0.34 * wind_speed)))+ gamma * 0.34 * (1 - (humidity / 100)) * math.sqrt(elev) * delta
 
     #print('ETo:', round((ETo*10), 2), 'mm/día')
 
