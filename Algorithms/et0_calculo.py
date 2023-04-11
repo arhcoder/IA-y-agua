@@ -15,38 +15,21 @@ def calculate_eto(t_max, t_min, wind_speed, humidity, solar_rad, elev, lat, doy)
     Returns:
     float: Reference evapotranspiration (ETo) in millimeters per day
     """
-    # Calculate the slope of the saturation vapor pressure curve
-    delta = 4098 * (0.6108 * math.exp((17.27 * t_max) / (t_max + 237.3))) / ((t_max + 237.3) ** 2)
+  
+    # Calcular la presion atmos del mar
+    P = (101.3 * ((293 - 0.0065 * elev) / 293) ** 5.26)
+    print(P)
 
-    # Calculate the atmospheric pressure
-    pressure = 101.3 * ((293 - 0.0065 * elev) / 293) ** 5.26
 
-    # Calculate the psychrometric constant
-    gamma = 0.000665 * pressure
+    delta = (4098 * (0.6108 * exp((17.27 * t_max) / (t_max + 237.3)) - 0.6108 * exp((17.27 * t_min) / (t_min + 237.3)))) / ((t_max - t_min) + 237.3) ** 2
+    gamma = 0.665e-3 * P  # aquí se asume que la presión atmosférica es 101.3 kPa
+    psy = 0.00163 * (P/ (0.622 * 2.45))# aquí se asume que la presión atmosférica es 101.3 kPa
 
-    # Calculate the extraterrestrial radiation
-    dr = 1 + 0.033 * math.cos((2 * math.pi / 365) * doy)
-    phi = math.radians(lat)
-    ra = (24 * 60 / math.pi) * 0.0820 * dr * (
-        math.acos(-math.tan(phi) * math.tan(0.4093 * math.sin((2 * math.pi / 365) * doy + 1.39))))
+    ETo = 0.408 * delta * (solar_rad / 25.0) + gamma * ((900 / (t_max + 273)) * wind_speed * (delta + psy * (1 + 0.34 * wind_speed)))+ gamma * 0.34 * (1 - (humidity / 100)) * sqrt(elev) * delta
 
-    # Calculate the net shortwave radiation
-    albedo = 0.23
-    rn = (1 - albedo) * solar_rad
+    #print('ETo:', round((ETo*10), 2), 'mm/día')
 
-    # Calculate the net longwave radiation
-    es_max = 0.6108 * math.exp((17.27 * t_max) / (t_max + 237.3))
-    es_min = 0.6108 * math.exp((17.27 * t_min) / (t_min + 237.3))
-    ea = es_min * humidity / 100
-    delta_temp = t_max - t_min
-    sigma = 4.903e-9  # Stefan-Boltzmann constant in MJ/K4/m2/d
-    r_nl = sigma * ((es_max + es_min) / 2) ** 4 * (0.34 - 0.14 * math.sqrt(ea)) * ((1.35 * rn / solar_rad) - 0.35)
-
-    # Calculate the reference evapotranspiration
-    eto = (0.408 * delta * (rn - r_nl) + gamma * 900 / (t_max + 273) * wind_speed * (es_max - ea)) / (
-                delta + gamma * (1 + 0.34 * wind_speed))
-
-    return eto
+    return ETo
 
 
 # Test the function with some sample parameters
