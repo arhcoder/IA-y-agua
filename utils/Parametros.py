@@ -1,13 +1,11 @@
-#!/usr/bin/env python3
-
 import pyowm
 import requests
+import datetime
 
 owm = pyowm.OWM('b9abefa7296fdaabc3e0dd9cd5d1765c')
 
 lat = 20.6736
 lon = -103.344
-date = '2023-04-10'
 
 mgr = owm.weather_manager()
 observation = mgr.weather_at_coords(lat, lon)
@@ -20,6 +18,9 @@ wind = w.wind()
 url = f'https://api.opentopodata.org/v1/eudem25m?locations={lat},{lon}'
 response = requests.get(url)
 elevation = response.json()['results'][0]['elevation']
+
+now = datetime.datetime.now()
+day_of_year = now.timetuple().tm_yday
 
 print('Temperatura:')
 print('    Media: ', temperature['temp'])
@@ -36,4 +37,4 @@ print('Elevacion: ', elevation)
 
 print('Latitud: ', lat)
 
-print('Día del año: ', int(date[5:7])*30 + int(date[8:10]))
+print('Día del año: ', day_of_year)
