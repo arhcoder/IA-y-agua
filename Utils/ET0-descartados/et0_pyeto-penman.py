@@ -1,50 +1,3 @@
-''' from datetime import datetime, timedelta
-from pyeto import fao, Location
-
-def calcular_et0(t_med, t_min, t_max, viento, humedad, elevacion, latitud, dia_yeard):
-    # Convertir la latitud de grados decimales a radianes
-    latitud_rad = latitud * (3.14159 / 180.0)
-
-    # Crear objeto datetime para el día del año
-    fecha = datetime(2023, 1, 1) + timedelta(days=dia_yeard-1)
-
-    # Crear objeto Location con la latitud y longitud del sitio
-    ubicacion = Location(latitud, 0)
-
-    # Calcular la duración del día en horas
-    duracion_dia = fao.daylight_hours(fecha, ubicacion)
-
-    # Calcular la presión atmosférica en kPa
-    presion_atm = fao.atmospheric_pressure(elevacion)
-
-    # Calcular la constante psicrométrica en kPa/°C
-    const_psicrom = fao.psy_const(presion_atm)
-
-    # Calcular la pendiente de la curva de saturación de vapor en kPa/°C
-    pend_curva_vapor = fao.sat_vapour_slope(t_med)
-
-    # Calcular la presión de saturación de vapor a la temperatura mínima y máxima en kPa
-    pres_sat_min = fao.saturation_vapour_pressure(t_min)
-    pres_sat_max = fao.saturation_vapour_pressure(t_max)
-
-    # Calcular la presión de vapor actual en kPa
-    pres_vapor = fao.actual_vapour_pressure(pres_sat_min, pres_sat_max, humedad)
-
-    # Calcular la radiación neta en MJ/m²/día
-    rad_neta = fao.net_radiation(dia_yeard, latitud, duracion_dia, t_min, t_max, viento)
-
-    # Calcular la resistencia aerodinámica en s/m
-    res_aero = fao.aerodynamic_resistance(viento)
-
-    # Calcular la resistencia estomática en s/m
-    res_estom = fao.stomatal_resistance()
-
-    # Calcular la evapotranspiración de referencia en mm/día
-    et0 = fao.penman_monteith(presion_atm, pend_curva_vapor, const_psicrom, rad_neta, t_med, viento, pres_vapor, res_aero, res_estom)
-
-    return et0'''
-
-'''
 import pyeto
 
 def calcular_et0(t_med, t_min, t_max, viento, humedad, elevacion, latitud, dia_yeard):
@@ -94,7 +47,6 @@ def calcular_et0(t_med, t_min, t_max, viento, humedad, elevacion, latitud, dia_y
     et0 = et0 * 86400 / 1000
 
     return et0
-'''
 
 from pyeto import fao
 
