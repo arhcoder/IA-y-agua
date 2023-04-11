@@ -52,4 +52,4 @@ def obtener_parametros_et0(latitud: float, longitud: float):
     return data
 
 # Ejemplo de coordenadas de Jalisco:
-print(obtener_parametros_et0(20.6736, -103.344))
+# print(obtener_parametros_et0(20.6736, -103.344))

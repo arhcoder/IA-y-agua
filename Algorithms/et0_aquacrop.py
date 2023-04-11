@@ -1,4 +1,4 @@
-from aquacrop.PenmanMonteith import PenmanMonteith
+'''from aquacrop.PenmanMonteith import PenmanMonteith
 from datetime import datetime
 
 def calcular_et0(t_med, t_min, t_max, viento, humedad, elevacion, latitud, dia_yeard):
@@ -45,4 +45,4 @@ def calcular_et0(t_med, t_min, t_max, viento, humedad, elevacion, latitud, dia_y
     # Calcular Et0
     et0 = PenmanMonteith(**parametros).calc_et0()
     
-    return et0
+    return et0'''

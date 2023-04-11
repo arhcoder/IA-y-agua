@@ -59,5 +59,5 @@ elev = 500
 lat = 20
 doy = 150
 
-eto = calculate_eto(t_max, t_min, wind_speed, humidity, solar_rad, elev, lat, doy)
-print("ETo: ", eto, "mm/day")
+# eto = calculate_eto(t_max, t_min, wind_speed, humidity, solar_rad, elev, lat, doy)
+# print("ETo: ", eto, "mm/day")

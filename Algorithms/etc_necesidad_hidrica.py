@@ -1,6 +1,7 @@
 # from et0_evapotranspiracion import calcular_et0
 # from et0_penman_monteith import calcular_et0
-from et0_aquacrop import calcular_et0
+# from et0_aquacrop import calcular_et0
+from et0_calculo import calculate_eto
 from et0_parametros import obtener_parametros_et0
 import csv
 
@@ -25,12 +26,12 @@ def calcular_necesidad_hidrica(mts_campo: float, semilla: str, estatus_cultivo: 
     clima = obtener_parametros_et0(latitud, longitud)
 
     # Calcula el valor de la evapotranspiración (et0):
-    et0 = calcular_et0(latitud=latitud, t_med=clima["temp_med"], t_min=clima["temp_min"], t_max=clima["temp_max"], viento=clima["viento_vel"], humedad=clima["humedad"], elevacion=clima["elevacion"], dia_yeard=clima["dia_anio"])
+    et0 = calculate_eto(lat=latitud, t_min=clima["temp_min"], t_max=clima["temp_max"], wind_speed=clima["viento_vel"], humidity=clima["humedad"], elev=clima["elevacion"], doy=clima["dia_anio"], solar_rad=25)
 
     # Encuentra el coeficiente del valor a la condición del cultivo basado en el tipo de semilla:
     with open('../Data/kc-coeficientes-de-cultivo-referencial.csv', newline='') as archivo:
         datos = list(csv.reader(archivo))
-    print(datos)
+    # print(datos)
 
     # Recorrer la matriz de coeficientes hasta encontrar la columna con el estátus del cultivo:
     flag_estatus = False
@@ -46,9 +47,11 @@ def calcular_necesidad_hidrica(mts_campo: float, semilla: str, estatus_cultivo: 
             flag_semilla = True
             break
     
+    # Si logró encontrar el Kc para el tipo de cultivo; concluye el cálculo:
     if flag_semilla and flag_estatus:
-        kc = int(datos[fila][columna])
-        f"\nTu cultivo de {mts_campo}m² de {semilla} en estátus de {estatus_cultivo} requiere {et0 * kc} mm/día"
+        kc = float(datos[fila][columna])
+        ETC = float(et0 * kc * mts_campo)
+        return f"\nTu cultivo de {mts_campo}m² de {semilla} en estátus de {estatus_cultivo} requiere {ETC} mm/día 😎\n"
     else:
         return "No"
 
