@@ -6,6 +6,7 @@ def Obtener_frec_riego(latitud, longitud):
     clima = obtener_parametros_et0(latitud, longitud)
     # Pedimos al usuario que introduzca los valores necesarios para el cálculo
     temperatura = float(input("Introduce la temperatura en grados Celsius: "))
+    temperatura = temp_med
 
     humedad_relativa = float(input("Introduce la humedad relativa en porcentaje (%): "))
 
