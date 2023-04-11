@@ -1,4 +1,6 @@
-from et0_evapotranspiracion import calcular_et0
+# from et0_evapotranspiracion import calcular_et0
+# from et0_penman_monteith import calcular_et0
+from et0_aquacrop import calcular_et0
 from et0_parametros import obtener_parametros_et0
 import csv
 

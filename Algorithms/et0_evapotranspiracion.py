@@ -17,6 +17,8 @@ def calcular_et0(t_med, t_min, t_max, viento, humedad, elevacion, latitud, dia_y
     Retorna:
     - ET0 (float): evapotranspiración de referencia (mm/día)
     """
+
+    '''
     # Constantes
     RADIACION_SOLAR_CONSTANTE = 0.0820  # MJ/m2/min
     GRAVEDAD_ESPECIFICA_AIRE = 0.000665  # kg/m3
@@ -82,3 +84,6 @@ def calcular_et0(t_med, t_min, t_max, viento, humedad, elevacion, latitud, dia_y
     )
 
     return ET0
+    '''
+
+    
