@@ -12,12 +12,24 @@ body{
 
 .nav-barra{
 	display: block;
+	margin-left: auto;
+	margin-right: auto;
 	margin-bottom: 5vw;
-    height: 3vw;
+    height: 3.8vw;
     width: auto;
     border-radius: 10px;
     background-color: rgba(240, 255, 255, 0.63);
 	
+}
+
+.menu{
+	overflow: hidden;
+	width: 100%;
+	display: block;
+}
+
+.menu .navbar-logo{
+	float: left;
 }
 
 .navbar-logo{
@@ -27,15 +39,24 @@ body{
 }
 
 .navbar-logo img{
+
+	align-self: left;
+	margin-top: 4px;
+	margin-left: 4px;
+	display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+  overflow-clip-margin: content-box;
+}
+
+.logoss {
 	margin-top: 2px;
 	margin-left: 2px;
 	display: block;
-  width: 40px;
-  height: 40px;
-  border-radius: 30px;
+  	width: 100px;
+  	height: 40px;
 }
-
-
 
 
 
