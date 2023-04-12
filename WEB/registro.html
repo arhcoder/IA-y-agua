@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IA'y agua</title>
+    <link rel="icon" href="IMG/logo.jpg.jpeg">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=BIZ+UDGothic&family=Bree+Serif&family=Lobster+Two&family=Oleo+Script+Swash+Caps&family=Open+Sans:wght@300&family=Patrick+Hand&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="nav-barra"><!--Mini menú-->
+        <div class="un">
+            <a class="navbar-logo" href="#">
+                <img src="IMG/logo.jpg.jpeg" >
+              </a>
+    
+            <h2 class="nav-title">SOFTSERVE</h2>
+        </div>
+        
+    </div>
+
+    
+    
+       <div id="form1">
+            <form class="form-struct">
+                <div class="nav-form">
+                    <h3 class="form-title">Datos personales</h3>
+                    <label class="ind-text">Favor de llenar todas las casillas</label>
+                    <div class="form-holder">
+                        <input type="text" class="input" placeholder="Ingrese su nombre"></input>
+                        <input type="text" class="input" placeholder="Ingrese su nombre de usuario"></input>
+                        <input type="password" class="input" placeholder="*****"></input>
+                        <input type="text" class="input" placeholder="Ingrese su nombre de usuario"></input>
+                    </div>
+                    <p class="ext1">¿Ya tienes una cuenta? <a href="ISesion.html">Click Aquí</a></p>
+                </div>
+                <button onclick="myFunction()" class="submit-btn">Siguiente</button>
+            </form>
+        </div>
+        <div id="form2">
+            <form class="form-struct"><!--Form datos personales-->
+                <div class="nav-form">
+                    <i></i><!--LOGOOOOO-->
+                    <h3 class="form-title">Datos del cultivo</h3>
+                    <label class="ind-text">Favor de llenar todas las casillas</label>
+                    <div class="form-holder">
+                        <input type="text" class="input" placeholder="Ubicación"></input>
+                        <input type="number" class="input" placeholder="Extensión territorial"></input>
+                        <select name="Tipo de riego" id="lista-des" >
+                            <optgroup>
+                                <option value="gravedad">Gravedad</option>
+                                <option value="aspersion">Aspersión</option>
+                                <option value="localizado">Localizado</option>
+                                <option value="subterraneo">Subterráneo</option>
+                            </optgroup>
+                          </select>
+                          <select name="Tipo semilla" id="lista-desp">
+                            <option value="ajo">ajo</option>
+                            <option value="alfalfa">alfalfa</option>
+                            <option value="almendro">almendro</option>
+                            <option value="arandano1">arandano año 1</option>
+                            <option value="arandano2">arandano año 2</option>
+                            <option value="arandano3">arandano año 3</option>
+                            <option value="arroz">arroz</option>
+                            <option value="arveja">arveja fresca</option>
+                            <option value="cebolla">cebolla seca</option>
+                            <option value="cebolla">cebolla verde</option>
+                            <option value="ciruelo">ciruelo</option>
+                            <option value="coliflor">coliflor</option>
+                            <option value="duraznero">duraznero</option>
+                            <option value="esparragos">esparragos</option>
+                            <option value="frambuesa">frambuesa</option>
+                            <option value="kiwi">kiwi</option>
+                            <option value="maíz dulce">maíz dulce</option>
+                            <option value="maíz grano">maíz grano</option>
+                            <option value="mani">mani</option>
+                            <option value="manzano">manzano</option>
+                            <option value="maravilla">maravilla</option>
+                            <option value="nectarino">nectarino</option>
+                            <option value="nogal">nogal</option>
+                            <option value="olivo">olivo</option>
+                            <option value="palto">palto</option>
+                            <option value="papa">papa</option>
+                            <option value="peral">peral</option>
+                            <option value="pimenton">pimentón</option>
+                            <option value="porotos">poroto seco</option>
+                            <option value="porotov">poroto vade</option>
+                            <option value="pradera">pradera</option>
+                            <option value="remolacha">remolacha</option>
+                            <option value="sandia">sandía</option>
+                            <option value="tabaco">tabaco</option>
+                            <option value="tomate">tomate</option>
+                            <option value="togo">togo</option>
+                            <option value="vid">vid</option>
+                          </select>
+                        <input type="number" class="input" placeholder="Densidad de plantas por m³"></input>
+                    </div>
+                    <button type="submit" class="submit-btn">Registrarse</button>
+                </div>
+            </form>
+        </div>
+    
+</body>
+</html>
