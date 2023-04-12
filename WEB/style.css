@@ -58,7 +58,12 @@ body{
   	height: 40px;
 }
 
-
+.icon {
+    float: right;
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+}
 
 
 /*Select*/
