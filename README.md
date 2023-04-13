@@ -26,11 +26,7 @@ ___
 <br>
 
 
-**Funciones del programa**
 
-[TOCM]
-
-[TOC]
 
 # Descripción de los algoritmos principales del programa
 ## etc_necesidad_hidrica
@@ -51,8 +47,7 @@ ETC=Et0 x Kc x A
 
 
 Donde
-	**Etc***:	 Es la evapotranspiración de cultivo y que es igual a la Demanda hídrica
-(mm/día).
+	**Etc***:	 Es la evapotranspiración de cultivo y que es igual a la Demanda hídrica (mm/día).
 	**Eto**:	 Es la evapotranspiración de referencia (mm/día).
 	**Kc**:	 Es un factor que ajusta el valor a la condición de cultivo.
 	**A**:	 Es el área en metros cuadrados del cultivo.
