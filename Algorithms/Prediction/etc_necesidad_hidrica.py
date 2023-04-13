@@ -87,9 +87,9 @@ def calcular_necesidad_hidrica(mts_campo: float, semilla: str, estatus_cultivo: 
         return "El tipo de semilla o el estátus de cultivo son incorrectos :c"
 
 # Ejemplo de uso:
-print(calcular_necesidad_hidrica(mts_campo=20, semilla="alfalfa", estatus_cultivo="cosecha", tipo_riego=1, latitud=20.6736, longitud=-103.344))
+# print(calcular_necesidad_hidrica(mts_campo=20, semilla="alfalfa", estatus_cultivo="cosecha", tipo_riego=1, latitud=20.6736, longitud=-103.344))
 
-cProfile.run("calcular_necesidad_hidrica(mts_campo=20, semilla='alfalfa', estatus_cultivo='cosecha', tipo_riego=1, latitud=20.6736, longitud=-103.4050)")
+# cProfile.run("calcular_necesidad_hidrica(mts_campo=20, semilla='alfalfa', estatus_cultivo='cosecha', tipo_riego=1, latitud=20.6736, longitud=-103.4050)")
 
 
 # print(calcular_necesidad_hidrica(mts_campo=20, semilla="alfalfa", estatus_cultivo="cosecha", tipo_riego=1, latitud=20.6736, longitud=-103.344))
