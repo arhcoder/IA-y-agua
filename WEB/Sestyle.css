@@ -6,7 +6,7 @@ body{
 /*FONDO de animmación*/
 .full-landing-image{ 
     background-image: url("IMG/Agua.jpg");
-    height: 100%;
+    height: 190%;
     width: 100%;
     height: 100vh;
     background-size: cover;
@@ -16,6 +16,7 @@ body{
 
 .ind-text{
     font-family: 'Bree Serif', serif;
+    font-weight: bold;
     font-size: 16wv;
     font-family: 'Open Sans', sans-serif;
 }
@@ -25,7 +26,7 @@ body{
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: 5vw;
+	margin-bottom: 2vw;
     height: 3.8vw;
     width: auto;
     border-radius: 10px;
@@ -72,12 +73,70 @@ body{
 /*DIV page*/
 .div-page{
     width: 60%;
-    height: 40%;
-    background-color: rgba(92, 201, 209, 0.911);
+    height: 1800%;
+    background-color: #06c8ddda;
 }
 
-.text-center{
-    
+input, select{
+    border: 0;
+		outline: none;
+		box-shadow: none;
+		display: block;
+		height: 30%;
+		line-height: 30px;
+		padding: 8px 15px;
+		border-bottom: 1px solid aliceblue;
+		width: 100%;
+		font-size: 12px;
+        border-radius: 17px;
+        font-family: 'Lato', sans-serif;;
 }
 
+.tit{
+    padding-top: 2%;
+    font-size: 33px;
+    font-family: 'Lobster Two', cursive;
+}
+
+.form-holder{
+    border-radius: 15px;
+		background-color: aliceblue;
+		overflow: hidden;
+		margin-top: 30px;
+		opacity: 1;
+		visibility: visible;
+		-webkit-transition: all .3s ease;
+    width: 60%;
+}
+
+
+.submit-btn{
+	background-color: #0188db;
+		color: white;
+		border:0;
+		border-radius: 15px;
+		display: block;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        padding: 1%;
+		width: 40%;
+		font-size: 13px;
+		font-weight: bold;
+		cursor: pointer;
+		opacity: 1;
+		visibility: visible;
+		-webkit-transition: all .3s ease;
+	}
+
+	.submit-btn:hover{
+		transition: all .3s ease;
+			background-color: #E6DDE4;
+            color: rgb(27, 27, 27);
+	}
+textarea{
+    margin-bottom: 2%;
+    font-size: 20px;
+    font-family: 'Nunito', sans-serif;
+    border-radius: 15px;
+}
 
