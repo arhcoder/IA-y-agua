@@ -2,10 +2,35 @@
 
 def obtener_parametros_et0(latitud: float, longitud: float):
 
+    '''
+        Recibe:
+            - [latitud] (float) de una zona;
+            - [longitud] (float) de una zona;
+        
+        Retorna:
+            - "temp_med": float(temperature["temp"]),
+            - "temp_min": float(temperature["temp_min"]),
+            - "temp_max": float(temperature["temp_max"]),
+            - "viento_vel": float(wind["speed"]),
+            - "direction": float(wind["deg"]),
+            - "humedad": float(humidity),
+            - "elevacion": 150,
+            - "dia_anio": int(day_of_year)
+            En un formato de MAPA;
+
+            Utiliza una API de datos meteorológicos:
+            librería "pyowm";
+    '''
+
     import pyowm
     import requests
     import datetime
 
+    '''
+        ! LLAVE EXPUESTA !
+        ESTO ES SÓLO PARA EL DESARROLLO DEL PROTOTIPO;
+        PARA LA VERSIÓN DE PRUDICCÓN SE REFACTORIZARÁ.
+    '''
     owm = pyowm.OWM("b9abefa7296fdaabc3e0dd9cd5d1765c")
 
     # Ejemplo de Guadalajara #
