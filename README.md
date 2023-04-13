@@ -120,3 +120,5 @@ Este código utiliza un enfoque de simulación basado en regresión lineal para 
 
 # Modelo de Inteligencia Artificial
 Aunque los modelos de simulación que utilizan inteligencia artificial aún no están completamente desarrollados para estimar los valores óptimos para el cultivo, existen diversas técnicas de aprendizaje automático y análisis de datos que pueden aplicarse para mejorar su precisión y utilidad en la agricultura moderna. En este sentido, nuestro proyecto ha desarrollado un algoritmo válido que ha sido detallado en la documentación final, el cual puede ser utilizado para optimizar la producción de cultivos y aumentar la eficiencia de las operaciones agrícolas. Sin embargo, es importante seguir investigando y mejorando estos modelos para que sean más precisos y fiables en la predicción del rendimiento.
+
+AÚN NO IMPLEMENTADO
