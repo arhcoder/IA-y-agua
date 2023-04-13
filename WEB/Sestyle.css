@@ -6,9 +6,11 @@ body{
 /*FONDO de animmación*/
 .full-landing-image{ 
     background-image: url("IMG/Agua.jpg");
+    height: 100%;
     width: 100%;
     height: 100vh;
     background-size: cover;
+    background-repeat: repeat-y;
 }
 
 
@@ -66,4 +68,16 @@ body{
   	width: 100px;
   	height: 40px;
 }
+
+/*DIV page*/
+.div-page{
+    width: 60%;
+    height: 40%;
+    background-color: rgba(92, 201, 209, 0.911);
+}
+
+.text-center{
+    
+}
+
 
