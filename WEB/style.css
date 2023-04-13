@@ -1,0 +1,155 @@
+body{
+    background-image: url("IMG/cultivo.jpg");
+    max-width: 100%;
+    height: auto;
+}
+
+.ind-text{
+    font-family: 'Bree Serif', serif;
+    font-size: 16wv;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.nav-barra{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 5vw;
+    height: 3.8vw;
+    width: auto;
+    border-radius: 10px;
+    background-color: rgba(240, 255, 255, 0.63);
+	
+}
+
+.menu{
+	overflow: hidden;
+	width: 100%;
+	display: block;
+}
+
+.menu .navbar-logo{
+	float: left;
+}
+
+.navbar-logo{
+	display: inline-block;
+  vertical-align: middle;
+  width: 70px;
+}
+
+.navbar-logo img{
+
+	align-self: left;
+	margin-top: 4px;
+	margin-left: 4px;
+	display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+  overflow-clip-margin: content-box;
+}
+
+.logoss {
+	margin-top: 2px;
+	margin-left: 2px;
+	display: block;
+  	width: 100px;
+  	height: 40px;
+}
+
+.icon {
+    float: right;
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+}
+
+
+/*Select*/
+select{
+	width: 10em;
+	border: 0;
+		outline: none;
+		box-shadow: none;
+		display: block;
+		height: 36px;
+		line-height: 30px;
+		padding: 8px 15px;
+		border-bottom: 1px solid aliceblue;
+		width: 110%;
+		font-size: 12px;
+}
+
+/*FORMS*/
+.form-struct{
+    margin: 50px;
+	background-color: rgba(240, 248, 255, 0.781);
+	border-radius: 15px;
+	height: 550px;
+	width: 350px;
+	position: relative;
+	overflow: hidden;
+}
+
+
+.nav-form{
+    position: absolute;
+		top: 50%;
+		left: 50%;
+		-webkit-transform: translate(-50%, -50%);
+		width: 65%;
+		z-index: 0;
+}
+
+.form-title{
+    color: rgb(150, 148, 148);
+		font-size: 1.7em;
+		text-align: center;
+}
+
+.form-holder{
+    border-radius: 15px;
+		background-color: aliceblue;
+		overflow: hidden;
+		margin-top: 30px;
+		opacity: 1;
+		visibility: visible;
+		-webkit-transition: all .3s ease;
+}
+
+.input{
+    border: 0;
+		outline: none;
+		box-shadow: none;
+		display: block;
+		height: 26px;
+		line-height: 30px;
+		padding: 8px 15px;
+		border-bottom: 1px solid aliceblue;
+		width: 100%;
+		font-size: 12px;
+    /*margin: 0vw 3vw 0vw 3vw;*/
+}
+
+.submit-btn{
+	background-color: rgba(145, 189, 186, 0.904);
+		color: rgba(256,256,256,0.7);
+		border:0;
+		border-radius: 15px;
+		display: block;
+		margin: 15px auto; 
+		padding: 15px 45px;
+		width: 100%;
+		font-size: 13px;
+		font-weight: bold;
+		cursor: pointer;
+		opacity: 1;
+		visibility: visible;
+		-webkit-transition: all .3s ease;
+	}
+
+	.submit-btn:hover{
+		transition: all .3s ease;
+			background-color: #E6DDE4;
+	}

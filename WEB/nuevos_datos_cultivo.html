@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="nuevocultivo.css" />
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title" class="text-center">Datos de cultivos</h1>
+            <p id="description" class="description text-center">
+                Favor de llenar todos los campos
+            </p>
+        </header>
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">Ubicación</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Ingrese la ubicación" required />
+            </div>
+            <div class="form-group">
+                <label id="name-label" for="name">Extensión territorial</label>
+                <input type="number" name="extension_terr" id="extension_terr" class="form-control" placeholder="Ingrese la extensión territorial (metros)" required />
+            </div>
+            <div class="form-group">
+                <p>Tipo de riego</p>
+                <select id="dropdown" name="role" class="form-control" required>
+            <option disabled selected value>Selecciona una opción</option>
+            <option value="gravedad">Gravedad</option>
+            <option value="aspersion">Aspersión</option>
+            <option value="localizado">Localizado</option>
+            <option value="subterraneo">Subterráneo</option>
+          </select>
+            </div>
+            <div class="form-group">
+                <p>Tipo de semilla</p>
+                <select id="most-like" name="mostLike" class="form-control" required>
+            <option disabled selected value>Selecciona una opción</option>
+            <option value="ajo">Ajo</option>
+            <option value="alfalfa">Alfalfa</option>
+            <option value="almendro">Almendro</option>
+            <option value="arandano1">Arandano año 1</option>
+            <option value="arandano2">Arandano año 2</option>
+            <option value="arandano3">Arandano año 3</option>
+            <option value="arroz">Arroz</option>
+            <option value="arveja">Arveja fresca</option>
+            <option value="cebolla">Cebolla seca</option>
+            <option value="cebolla">Cebolla verde</option>
+            <option value="ciruelo">Ciruelo</option>
+            <option value="coliflor">Coliflor</option>
+            <option value="duraznero">Duraznero</option>
+            <option value="esparragos">Esparragos</option>
+            <option value="frambuesa">Frambuesa</option>
+            <option value="kiwi">Kiwi</option>
+            <option value="maíz dulce">Maíz dulce</option>
+            <option value="maíz grano">Maíz grano</option>
+            <option value="mani">Mani</option>
+            <option value="manzano">Manzano</option>
+            <option value="maravilla">Maravilla</option>
+            <option value="nectarino">Nectarino</option>
+            <option value="nogal">Nogal</option>
+            <option value="olivo">Olivo</option>
+            <option value="palto">Palto</option>
+            <option value="papa">Papa</option>
+            <option value="peral">Peral</option>
+            <option value="pimenton">Pimentón</option>
+            <option value="porotos">Poroto seco</option>
+            <option value="porotov">Poroto vade</option>
+            <option value="pradera">Pradera</option>
+            <option value="remolacha">Remolacha</option>
+            <option value="sandia">Sandía</option>
+            <option value="tabaco">Tabaco</option>
+            <option value="tomate">Tomate</option>
+            <option value="togo">Togo</option>
+            <option value="vid">Vid</option>
+          </select>
+            </div>
+            <div class="form-group">
+                <label id="name-label" for="name">Densidad de plantas * m^3</label>
+                <input type="number" name="name" id="name" class="form-control" placeholder="Ingrese la densidad de plantas" required />
+            </div>
+
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">
+            Obtener respuesta
+          </button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

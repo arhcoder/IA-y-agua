@@ -1,0 +1,78 @@
+
+    
+ 
+
+body{
+    margin: 0;
+    padding: 0;
+}
+  
+  
+.full-landing-image{
+    background-image: url("IMG/Agua.jpg");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+}
+
+
+.ind-text{
+    font-family: 'Bree Serif', serif;
+    font-size: 16wv;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.nav-barra{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 5vw;
+    height: 3.8vw;
+    width: auto;
+    border-radius: 10px;
+    background-color: rgba(240, 255, 255, 0.63);
+	
+}
+
+.menu{
+	overflow: hidden;
+	width: 100%;
+	display: block;
+}
+
+.menu .navbar-logo{
+	float: left;
+}
+
+.navbar-logo{
+	display: inline-block;
+  vertical-align: middle;
+  width: 70px;
+}
+
+.navbar-logo img{
+
+	align-self: left;
+	margin-top: 4px;
+	margin-left: 4px;
+	display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+  overflow-clip-margin: content-box;
+}
+
+.logoss {
+	margin-top: 2px;
+	margin-left: 2px;
+	display: block;
+  	width: 100px;
+  	height: 40px;
+}
+
+.icon {
+    float: right;
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+}
