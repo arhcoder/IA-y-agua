@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+
+import cProfile
 from et0_evapotranspiracion import obtener_et0
 from et0_parametros import obtener_parametros_et0
 from kc_coeficiente_semilla import obtener_kc
@@ -19,24 +22,30 @@ def calcular_necesidad_hidrica(mts_campo: float, semilla: str, estatus_cultivo: 
               "../../Data/kc-coeficientes-de-cultivo-referencial.csv";
               Ejemplo: "alfalfa";
 
-            - estatus_cultivo (string): Estátus del cultivo; en texto y minúscualas;
+            - estatus_cultivo (string): Estátus del cultivo; en texto y minúsculas;
+
                 - "Inicial": En esta etapa, el cultivo se encuentra en el periodo de germinación
                     y emergencia de las plántulas. Tiene una alta demanda de agua para mantener
                     la humedad del suelo y favorecer su crecimiento.
+
                 - "Desarrollo": En esta etapa, el cultivo ya ha desarrollado su sistema de raíces
                     y comienza a producir hojas y tallos. La demanda de agua durante esta etapa es
                     menor que en la etapa inicial, pero aún es importante para sostener el
-                crecimiento del cultivo.
+                    crecimiento del cultivo.
+
                 - "Medios": En esta etapa, el cultivo se encuentra en su fase de desarrollo máximo,
                     con un alto crecimiento de hojas, tallos y raíces. En esta etapa, el cultivo
                     necesita un suministro constante de agua para satisfacer su demanda de nutrientes
                     y mantener su salud.
+
                 - "Finales": Durante esta etapa, el cultivo comienza a madurar y producir frutos o
                 semillas. La demanda de agua durante esta etapa disminuye a medida que el cultivo
                 reduce su crecimiento y comienza a concentrar su energía en la producción de la cosecha.
+
                 - "Cosecha": En esta etapa se recolectan los frutos o semillas del cultivo. Durante
                 esta etapa, la demanda hídrica del cultivo es baja, ya que su ciclo de vida ha llegado
                 a su fin.
+
             - tipo de tiego (int):
                 [1]: Riego por gravedad;
                 [2]: Riego por asperción;
@@ -78,4 +87,9 @@ def calcular_necesidad_hidrica(mts_campo: float, semilla: str, estatus_cultivo: 
         return "El tipo de semilla o el estátus de cultivo son incorrectos :c"
 
 # Ejemplo de uso:
+print(calcular_necesidad_hidrica(mts_campo=20, semilla="alfalfa", estatus_cultivo="cosecha", tipo_riego=1, latitud=20.6736, longitud=-103.344))
+
+cProfile.run("calcular_necesidad_hidrica(mts_campo=20, semilla='alfalfa', estatus_cultivo='cosecha', tipo_riego=1, latitud=20.6736, longitud=-103.4050)")
+
+
 # print(calcular_necesidad_hidrica(mts_campo=20, semilla="alfalfa", estatus_cultivo="cosecha", tipo_riego=1, latitud=20.6736, longitud=-103.344))
