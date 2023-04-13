@@ -5,7 +5,6 @@ from et0_evapotranspiracion import obtener_et0
 from et0_parametros import obtener_parametros_et0
 from kc_coeficiente_semilla import obtener_kc
 from frecuencia_riego import obtener_frecuencia_riego
-import csv
 
 def calcular_necesidad_hidrica(mts_campo: float, semilla: str, estatus_cultivo: str, tipo_riego: int, latitud: float, longitud: float):
 
@@ -41,8 +40,14 @@ def calcular_necesidad_hidrica(mts_campo: float, semilla: str, estatus_cultivo: 
                 - "Cosecha": En esta etapa se recolectan los frutos o semillas del cultivo. Durante
                 esta etapa, la demanda hídrica del cultivo es baja, ya que su ciclo de vida ha llegado
                 a su fin.
-
-
+            - tipo de tiego (int):
+                [1]: Riego por gravedad;
+                [2]: Riego por asperción;
+                [3]: Riego localizado;
+                [4]: Riego subterráneo;
+            
+            - latitud (float): De la localización del cultivo;
+            - longitud (float): De la localización del cutivo;
     '''
 
     # Obtiene los parámetros meteorológicos para la evapotranspiración:
@@ -70,7 +75,8 @@ def calcular_necesidad_hidrica(mts_campo: float, semilla: str, estatus_cultivo: 
         ETC = float(et0 * kc * mts_campo)
         frecuencia = obtener_frecuencia_riego(latitud, longitud)
         litros = ETC * 100
-        return f"\nTu cultivo de {mts_campo}m² de {semilla} en estátus de {estatus_cultivo} requiere {round(ETC, 2)} mm/día 😎\nQue equivalen a {round(litros, 2)}lts cada {round(frecuencia, 2)} días 📅\n"
+        horas = frecuencia * 24
+        return f"\nTu cultivo de {mts_campo}m² de {semilla} en estátus de {estatus_cultivo} requiere {round(ETC, 2)} mm/día 😎\nQue equivalen a {round(litros, 2)} lts cada {round(horas, 2)} horas ⏳\n"
     else:
         return "El tipo de semilla o el estátus de cultivo son incorrectos :c"
 
@@ -80,3 +86,4 @@ print(calcular_necesidad_hidrica(mts_campo=20, semilla="alfalfa", estatus_cultiv
 cProfile.run("calcular_necesidad_hidrica(mts_campo=20, semilla='alfalfa', estatus_cultivo='cosecha', tipo_riego=1, latitud=20.6736, longitud=-103.4050)")
 
 
+# print(calcular_necesidad_hidrica(mts_campo=20, semilla="alfalfa", estatus_cultivo="cosecha", tipo_riego=1, latitud=20.6736, longitud=-103.344))

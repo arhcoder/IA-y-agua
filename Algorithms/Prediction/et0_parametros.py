@@ -64,11 +64,15 @@ def obtener_parametros_et0(latitud: float, longitud: float):
     # print("Latitud: ", latitud)
     # print("Día del año: ", day_of_year)
 
+    wind_velocity = float(wind["speed"])
+    if wind_velocity == 0:
+        wind_velocity = 1
+
     data = {
         "temp_med": float(temperature["temp"]),
         "temp_min": float(temperature["temp_min"]),
         "temp_max": float(temperature["temp_max"]),
-        "viento_vel": float(wind["speed"]),
+        "viento_vel": float(wind_velocity),
         "direction": float(wind["deg"]),
         "humedad": float(humidity),
         "elevacion": 150,
